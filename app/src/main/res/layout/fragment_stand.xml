@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".StandFragment">
+    <ImageView
+        android:id="@+id/load_image"
+        android:layout_width="170dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/load_foot" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="296dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="56dp"
+        tools:layout_editor_absoluteY="47dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/load_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="load"
+                android:textAlignment="center"
+                android:textColor="#0378F6"
+                android:textSize="36sp" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/const_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/load_text"
+                android:padding="20dp">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/front"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Front"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:id="@+id/middle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="30dp"
+                        android:text="Middle"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:id="@+id/end"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="End"
+                        android:textAlignment="center" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="254dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+                    <TextView
+                        android:id="@+id/front_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="34%"
+                        android:textAlignment="center"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/middle_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="25dp"
+                        android:text="32%"
+                        android:textAlignment="center"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/end_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="34%"
+                        android:textAlignment="center"
+                        android:textSize="24sp" />
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="50dp"
+    android:orientation="vertical"
+    tools:context=".ProfileFragment">
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="Profile"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/user_image"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/user" />
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="20dp"
+            android:gravity="center"
+            android:text="James"
+            android:textSize="22sp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/user_sex"
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/border_radius_view"
+                android:backgroundTint="@color/colorLightPink"
+                android:gravity="center"
+                android:text="male"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/user_age"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_toRightOf="@id/user_sex"
+                android:background="@drawable/border_radius_view"
+                android:backgroundTint="@color/colorLightPink"
+                android:gravity="center"
+                android:text="65 years old"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/user_height"
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:layout_below="@id/user_sex"
+                android:layout_margin="5dp"
+                android:background="@drawable/border_radius_view"
+                android:backgroundTint="@color/colorLightPink"
+                android:gravity="center"
+                android:text="165cm"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                tools:layout_editor_absoluteX="167dp"
+                tools:layout_editor_absoluteY="173dp" />
+
+            <TextView
+                android:id="@+id/user_weight"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@id/user_age"
+                android:layout_margin="5dp"
+                android:layout_toRightOf="@id/user_sex"
+                android:background="@drawable/border_radius_view"
+                android:backgroundTint="@color/colorLightPink"
+                android:gravity="center"
+                android:text="65kg"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="50dp"
+        android:backgroundTint="@color/colorDeepDark"
+        android:text="Info Change"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="30dp"
+        android:background="?android:attr/listDivider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="30dp"
+            android:layout_weight="1"
+            android:text="Today's Feedback"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:paddingRight="40dp"
+            tools:layout_editor_absoluteX="-1dp"
+            tools:layout_editor_absoluteY="324dp">
+
+            <ImageView
+                android:id="@+id/thumb_gait"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/ic_baseline_thumb_up_24" />
+
+            <TextView
+                android:id="@+id/feedback_text_gait"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/border_radius_view"
+                android:gravity="center"
+                android:text="The load is very balanced."
+                android:textAlignment="center"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:paddingRight="40dp"
+            tools:layout_editor_absoluteX="-1dp"
+            tools:layout_editor_absoluteY="324dp">
+
+            <ImageView
+                android:id="@+id/thumb_load"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/ic_baseline_thumb_down_24" />
+
+            <TextView
+                android:id="@+id/feedback_text_load"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/border_radius_view"
+                android:gravity="center"
+                android:text="Your gait is not good."
+                android:textAlignment="center"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+

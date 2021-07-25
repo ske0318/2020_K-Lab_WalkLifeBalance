@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HelpActivity">
+
+    <include
+        android:id="@+id/help_toolbar"
+        layout="@layout/tool_bar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#D9409C"
+        android:backgroundTint="#D9409C"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+<!--    <include-->
+<!--        android:id="@+id/help_bottom_nav"-->
+<!--        layout="@layout/bottom_nav"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ScrollView
+        android:layout_width="420dp"
+        android:layout_height="619dp"
+        app:layout_constraintBottom_toTopOf="@+id/help_bottom_nav"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/help_toolbar"
+        tools:ignore="UnknownId">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="100dp"
+                android:gravity="center"
+                android:padding="20px"
+                android:text="Guide to Use"
+                android:textSize="35sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/homeImage"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="40dp"
+                    app:srcCompat="@drawable/home" />
+
+                <TextView
+                    android:id="@+id/homeDescription"
+                    android:layout_width="266dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:padding="30px"
+                    android:text="A button to go to the Home screen. Each information can be viewed through four buttons: stride, gait, and load."
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/statisticsImage"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="40dp"
+                    android:layout_weight="0"
+                    app:srcCompat="@drawable/statistics" />
+
+                <TextView
+                    android:id="@+id/statisticsDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_weight="1"
+                    android:padding="20dp"
+                    android:text="Specific walking information can be found daily, weekly, and monthly."
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/profileImage"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="40dp"
+                    android:layout_weight="0"
+                    app:srcCompat="@drawable/profile" />
+
+                <TextView
+                    android:id="@+id/profileDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="28dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="0"
+                    android:padding="20dp"
+                    android:text="User Profile button for accurate measurements. User information can be changed and Bluetooth connection is possible."
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/settingImage"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="40dp"
+                    android:layout_weight="0"
+                    app:srcCompat="@drawable/ic_settings_black_48dp" />
+
+                <TextView
+                    android:id="@+id/settingDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="28dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="0"
+                    android:padding="20dp"
+                    android:text="This setting button allows you to set the font size, sound, vibration, fall accident notification, etc. "
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
